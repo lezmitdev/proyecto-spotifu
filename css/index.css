@@ -3,13 +3,17 @@
 @import './body.css';
 @import './link.css';
 @import './button-icon.css';
-@import './logo.css';
-@import './list.css';
-@import './menu.css';
+@import './sidebar.css';
+@import './ellipsis.css';
+@import './scrollbar.css';
+@import './player.css';
+@import './page.css';
+@import './layout.css';
+
 
 
 :root {
-  
+    font-size: 14px;
   --primary: #00B050;
   --white: #ffffff;
   --gray10: #B3B3B3;
@@ -26,5 +30,14 @@
   --button: bold .875rem/1rem var(--basefontFamily);
   --small: normal .75em/normal var(--basefontFamily);
 }
-
+@media screen and (min-width: 768px)  {
+  :root{
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1366px)  {
+  :root{
+    font-size: 18px;
+  }
+}
 
