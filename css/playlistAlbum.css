@@ -1,0 +1,31 @@
+.main-inline{
+    min-inline-size: 68.3125rem;
+}
+.playlistAlbum{
+    display: flex;
+    gap: 1.5rem;
+
+}
+.playlistAlbum-cover img{
+    vertical-align: middle;
+    inline-size: 19,5rem;
+    block-size: 11,4375rem;
+}
+.playlistAlbum-details{
+    color: var(--white);
+}
+.playlistAlbum-title{
+    font: var(--headline1);
+    line-height: 2.75rem;
+    margin: 0;
+    margin-block-end: 1rem;
+}
+.playlistAlbum-details p{
+    font: var(--baseFont);
+    line-height:1.375rem;
+    margin: 0;
+}
+
+.playlistAlbum-details button{
+    margin-block-start: 1rem;
+}

@@ -1,0 +1,33 @@
+@import './albumList-detail.css';
+.albumPlaylist{
+    display: flex;
+    gap: 0.625rem;
+
+}
+.albumPlaylist-cover img{
+    vertical-align: middle;
+    inline-size: 14.5rem;
+    block-size: 14.5rem;
+}
+.albumPlaylist-details{
+    
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: .625rem;
+
+}
+.albumPlaylist-title{
+    font: var(--headline1);
+    line-height: 2.75rem;
+    margin: 0;
+}
+.albumPlaylist-details p{
+    font: var(--small);
+    line-height:.875rem;
+    margin: 0;
+}
+.album-albumPlaylistControl{
+    padding-block-start: 1rem;
+}

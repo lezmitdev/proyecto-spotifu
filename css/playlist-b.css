@@ -34,3 +34,7 @@
     opacity: 0;
     transition: .3s;
 }
+.playlitsB-content-title{
+
+    inline-size: calc(17.5rem - 9.749rem);
+}

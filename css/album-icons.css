@@ -1,0 +1,31 @@
+.album-icon{
+    cursor: pointer;
+}
+
+.album-icon.is-white{
+    background: transparent;
+    color: var(--white);
+}
+.icon-reproducir{
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    font-size: 0.5rem;
+}
+
+.album-icon .icon-play{
+    position: relative;
+    left: 1px;
+
+}
+.icon-guardar{
+    border: none;
+}
+.album-icon .icon-heart{
+    font-size: 1.125rem;
+
+}
+.album-icon:active{
+    transform: scale(.95);
+}

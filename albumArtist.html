@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Album Artist </title>
+    <meta property="og:title" content="Mi proyecto del Curso de Flexbox" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Todo lo que necesitas saber en tu día a día como Frontend" />
+    <meta property="og:url" content="https://lezmitdev.github.io/proyecto-spotifu/" />
+    <!--<meta property="og:image" content="https://lezmitdev.github.io/proyecto-nemium/images/dom.png" />-->
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="body" aria-current="page">
+    <div class="layout">
+        <div class="layout-block">
+            <div class="layout-sidebar">
+                <div class="sidebar">
+                    <header class="logo">
+                        <a href="/">
+                            <img src="./images/spotifu-logo.png" class="logo-image" width="112" height="32"
+                                alt="Logo de spotifu-logo">
+                        </a>
+                    </header>
+                    <nav class="menu" aria-labelledby="principal">
+                        <ul class="menu-list">
+                            <li class="menuItem is-active">
+                                <a href="/" class="link" aria-current="page">
+                                    <i class="icon-home" aria-hidden="true"></i>
+                                    <span>Inicio</span>
+                                </a>
+                            </li>
+                            <li class="menuItem">
+                                <a href="/" class="link" aria-current="page">
+                                    <i class="icon-search" aria-hidden="true"></i>
+                                    <span>Buscar</span>
+                                </a>
+                            </li>
+                            <li class="menuItem">
+                                <a href="/" class="link" aria-current="page">
+                                    <i class="icon-creditCard" aria-hidden="true"></i>
+                                    <span>Premium</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="list" aria-labelledby="library-navigation">
+                        <h2 class="list-title" id="library-navigation">Tu biblioteca</h2>
+                        <ul class="list-content">
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a href="#" class="link">Creada para ti </a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a href="#" class="link">Escuchado recientemente </a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a href="#" class="link">Tus Me gusta</a>
+                                </span>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <nav class="list" aria-labelledby="playlist-navigation">
+                        <h2 class="list-title" id="playlist-navigation">Playlist</h2>
+                        <ul class="list-content">
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a href="#" class="link">Lo mejor de lo mejor </a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a href="#" class="link">Naruto al 100% para programar </a>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a href="#" class="link">Para cantar en la ducha</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a href="#" class="link">Sin parar</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a href="#" class="link">Naruto openings </a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a href="#" class="link">Boku no pico</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a href="#" class="link">This is pokemon</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a href="#" class="link">Más populares de la semana</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a href="#" class="link">Mis pistas de shazam</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a href="#" class="link">Audio library</a>
+                                </span>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="layout-main album-background">
+                <div class="page ">
+                    <div class="sticky">
+                        <div class="page-block">
+                            <header class="header" aria-label="Barra superior y menú del usuario">
+                                <div class="navigation">
+                                    <button class="navigation-prev" aria-label="Volver" title="Volver">
+                                        <i class="icon-arrowLeft" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
+                                        <i class="icon-arrowRight" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <form class="search" role="search"
+                                    aria-label="Buscar por artistas, canciones o podcast">
+                                    <i class="icon-search" aria-hidden="true"></i>
+                                    <input type="search" placeholder="Buscar por artistas, canciones o podcast">
+                                </form>
+                                <div class="user-session">                                    
+                                    <button class="userSession">
+                                        <img src="./images/user-session.jpg" width="28"  height="28" alt="usuario de session " title="usuario de session ">
+                                        Lezmit Galarza
+                                        <i class="icon-vector" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </header>
+                        </div>
+                    </div>
+                    <main class="page-block main-inline">
+                        <section class="playlistAlbum albumArtist">
+                            <div class="playlistAlbum-details albumArtist-details">                            
+                                <h3 class="playlistAlbum-title">Mansión Reggaetón</h3>
+                                <p>Los éxitos de reggaetón del momento</p>
+                                <p>2,611,830 SEGUIDORES</p>
+                                <button class="button is-primary" title="Reproducir la lista de Mansión Reggaetón" aria-label="Reproducir la lista de Mansión Reggaetón">
+                                    REPRODUCIR
+                                </button>
+                            </div>     
+                        </section>
+                        <section class="album">
+                            <div class="album-filtrar">
+                                <form class="filtrarForm" role="search"
+                                    aria-label="Filtrar">
+                                    <i class="icon-search" aria-hidden="true"></i>
+                                    <input type="search" value="Filtrar" >
+                                    <i class="icon-close" aria-hidden="true"></i>
+                                </form>
+                            </div>
+                            <div class="albumList">
+                                <div class="albumList-description">
+                                    <div class="content-title">
+                                        <div class="albumList-icons"></div>
+                                        <div class="albumList-title">
+                                            <h5>TITULO</h5>
+                                        </div>
+                                    </div>
+                                    <div class="albumList-artist">
+                                        <h5>ARTISTA</h5>
+                                    </div>
+                                    <div class="albumList-album">
+                                        <h5>ALBUM</h5>
+                                    </div>
+                                    <div class="content-date">
+                                        <div class="albumList-calendar" role="img" aria-label="Fecha">
+                                            <i class="icon-calendar" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="albumList-clock" role="img" aria-label="Hora">
+                                            <i class="icon-clock" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="albumList-container">
+                                    <div class="albumList-description">
+                                        <div class="content-title">
+                                            <div class="albumList-icons">
+                                                <button class="album-icon is-white icon-reproducir " aria-label="Reproductor">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="album-icon is-white icon-guardar" role="switch" aria-checked="false"aria-label="Guardar en tu biblioteca" title="Guardar en tu biblioteca">
+                                                    <i class="icon-heart" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                            <div class="albumList-title">
+                                                <a href="#" class="link">Me acuerdo de ti</a>
+                                            </div>
+                                        </div>
+                                        <div class="albumList-artist">
+                                            <a href="#" class="link">MALUMA</a>
+                                        </div>
+                                        <div class="albumList-album">
+                                            <a href="#" class="link">PAPI JUANCHO</a>
+                                        </div>
+                                        <div class="content-date">
+                                            <div class="albumList-calendar">
+                                                <p>2021-02-10</p>
+                                            </div>
+                                            <div class="albumList-clock">
+                                                <p>3.25</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="albumList-description">
+                                        <div class="content-title">
+                                            <div class="albumList-icons">
+                                                <button class="album-icon is-white icon-reproducir " aria-label="Reproductor">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="album-icon is-white icon-guardar" role="switch" aria-checked="false" aria-label="Guardar en tu biblioteca" title="Guardar en tu biblioteca">
+                                                    <i class="icon-heart" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                            <div class="albumList-title">
+                                                <a href="#" class="link">Hawai</a>
+                                            </div>
+                                        </div>
+                                        <div class="albumList-artist">
+                                            <a href="#" class="link">MALUMA</a>
+                                        </div>
+                                        <div class="albumList-album">
+                                            <a href="#" class="link">HAWAI</a>
+                                        </div>
+                                        <div class="content-date">
+                                            <div class="albumList-calendar">
+                                                <p>2021-02-10</p>
+                                            </div>
+                                            <div class="albumList-clock">
+                                                <p>3:25</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="albumList-description">
+                                        <div class="content-title">
+                                            <div class="albumList-icons">
+                                                <button class="album-icon is-white icon-reproducir " aria-label="Reproductor">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="album-icon is-white icon-guardar" role="switch" aria-checked="false"aria-label="Guardar en tu biblioteca" title="Guardar en tu biblioteca">
+                                                    <i class="icon-heart" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                            <div class="albumList-title">
+                                                <a href="#" class="link">MAMI</a>
+                                            </div>
+                                        </div>
+                                        <div class="albumList-artist">
+                                            <a href="#" class="link">kAROL G, BECKY G</a>
+                                        </div>
+                                        <div class="albumList-album">
+                                            <a href="#" class="link">MAMI</a>
+                                        </div>
+                                        <div class="content-date">
+                                            <div class="albumList-calendar">
+                                                <p>2021-02-09</p>
+                                            </div>
+                                            <div class="albumList-clock">
+                                                <p>3:46</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="albumList-description">
+                                        <div class="content-title">
+                                            <div class="albumList-icons">
+                                                <button class="album-icon is-white icon-reproducir " aria-label="Reproductor">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="album-icon is-white icon-guardar" role="switch" aria-checked="false"aria-label="Guardar en tu biblioteca" title="Guardar en tu biblioteca">
+                                                    <i class="icon-heart" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                            <div class="albumList-title">
+                                                <a href="#" class="link">Envolver</a>
+                                            </div>
+                                        </div>
+                                        <div class="albumList-artist">
+                                            <a href="#" class="link">ANITTA</a>
+                                        </div>
+                                        <div class="albumList-album">
+                                            <a href="#" class="link">ENVOLVER</a>
+                                        </div>
+                                        <div class="content-date">
+                                            <div class="albumList-calendar">
+                                                <p>2021-02-10</p>
+                                            </div>
+                                            <div class="albumList-clock">
+                                                <p>3:13</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="albumList-description">
+                                        <div class="content-title">
+                                            <div class="albumList-icons">
+                                                <button class="album-icon is-white icon-reproducir " aria-label="Reproductor">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="album-icon is-white icon-guardar" role="switch" aria-checked="false"aria-label="Guardar en tu biblioteca" title="Guardar en tu biblioteca">
+                                                    <i class="icon-heart" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                            <div class="albumList-title">
+                                                <a href="#" class="link">Desesperados</a>
+                                            </div>
+                                        </div>
+                                        <div class="albumList-artist">
+                                            <a href="#" class="link">Rauw Alejandro</a>
+                                        </div>
+                                        <div class="albumList-album">
+                                            <a href="#" class="link">Desesperados</a>
+                                        </div>
+                                        <div class="content-date">
+                                            <div class="albumList-calendar">
+                                                <p>2021-02-10</p>
+                                            </div>
+                                            <div class="albumList-clock">
+                                                <p>3:44</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="albumList-description">
+                                        <div class="content-title">
+                                            <div class="albumList-icons">
+                                                <button class="album-icon is-white icon-reproducir " aria-label="Reproductor">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="album-icon is-white icon-guardar" role="switch" aria-checked="false"aria-label="Guardar en tu biblioteca" title="Guardar en tu biblioteca">
+                                                    <i class="icon-heart" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                            <div class="albumList-title">
+                                                <a href="#" class="link">Tacones Rojos </a>
+                                            </div>
+                                        </div>
+                                        <div class="albumList-artist">
+                                            <a href="#" class="link">SEBASTIAN YATRA</a>
+                                        </div>
+                                        <div class="albumList-album">
+                                            <a href="#" class="link">Tacones Rojos</a>
+                                        </div>
+                                        <div class="content-date">
+                                            <div class="albumList-calendar">
+                                                <p>2021-02-10</p>
+                                            </div>
+                                            <div class="albumList-clock">
+                                                <p>3:09</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="albumList-description">
+                                        <div class="content-title">
+                                            <div class="albumList-icons">
+                                                <button class="album-icon is-white icon-reproducir " aria-label="Reproductor">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="album-icon is-white icon-guardar" role="switch" aria-checked="false"aria-label="Guardar en tu biblioteca" title="Guardar en tu biblioteca">
+                                                    <i class="icon-heart" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                            <div class="albumList-title">
+                                                <a href="#" class="link">LA FAMA</a>
+                                            </div>
+                                        </div>
+                                        <div class="albumList-artist">
+                                            <a href="#" class="link">ROSALÍA, The weekend</a>
+                                        </div>
+                                        <div class="albumList-album">
+                                            <a href="#" class="link">HAWAI</a>
+                                        </div>
+                                        <div class="content-date">
+                                            <div class="albumList-calendar">
+                                                <p>2021-02-10</p>
+                                            </div>
+                                            <div class="albumList-clock">
+                                                <p>3:08</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="albumList-description">
+                                        <div class="content-title">
+                                            <div class="albumList-icons">
+                                                <button class="album-icon is-white icon-reproducir " aria-label="Reproductor">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="album-icon is-white icon-guardar" role="switch" aria-checked="false"aria-label="Guardar en tu biblioteca" title="Guardar en tu biblioteca">
+                                                    <i class="icon-heart" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                            <div class="albumList-title">
+                                                <a href="#" class="link">Índigo</a>
+                                            </div>
+                                        </div>
+                                        <div class="albumList-artist">
+                                            <a href="#" class="link">Camilom, Evaluna Montaner</a>
+                                        </div>
+                                        <div class="albumList-album">
+                                            <a href="#" class="link">ÍNDIGO</a>
+                                        </div>
+                                        <div class="content-date">
+                                            <div class="albumList-calendar">
+                                                <p>2021-02-10</p>
+                                            </div>
+                                            <div class="albumList-clock">
+                                                <p>3:34</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="albumList-description">
+                                        <div class="content-title">
+                                            <div class="albumList-icons">
+                                                <button class="album-icon is-white icon-reproducir " aria-label="Reproductor">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="album-icon is-white icon-guardar" role="switch" aria-checked="false"aria-label="Guardar en tu biblioteca" title="Guardar en tu biblioteca">
+                                                    <i class="icon-heart" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                            <div class="albumList-title">
+                                                <a href="#" class="link">VOLVÍ</a>
+                                            </div>
+                                        </div>
+                                        <div class="albumList-artist">
+                                            <a href="#" class="link">Aventura, Bad Bunny</a>
+                                        </div>
+                                        <div class="albumList-album">
+                                            <a href="#" class="link">Volví</a>
+                                        </div>
+                                        <div class="content-date">
+                                            <div class="albumList-calendar">
+                                                <p>2021-02-10</p>
+                                            </div>
+                                            <div class="albumList-clock">
+                                                <p>3:50</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="albumList-description">
+                                        <div class="content-title">
+                                            <div class="albumList-icons">
+                                                <button class="album-icon is-white icon-reproducir " aria-label="Reproductor">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="album-icon is-white icon-guardar" role="switch" aria-checked="false"aria-label="Guardar en tu biblioteca" title="Guardar en tu biblioteca">
+                                                    <i class="icon-heart" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                            <div class="albumList-title">
+                                                <a href="#" class="link">Pareja Del Año</a>
+                                            </div>
+                                        </div>
+                                        <div class="albumList-artist">
+                                            <a href="#" class="link">Sebastian Yatra</a>
+                                        </div>
+                                        <div class="albumList-album">
+                                            <a href="#" class="link">Pareja Del Año</a>
+                                        </div>
+                                        <div class="content-date">
+                                            <div class="albumList-calendar">
+                                                <p>2021-02-10</p>
+                                            </div>
+                                            <div class="albumList-clock">
+                                                <p>3.15</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </section>
+                    </main>
+                </div>
+            </div>
+
+        </div>
+        <div class="layout-block">
+            <footer class="layout-bottom">
+                <div class="player">
+                    <div class="player-nowPlaying">
+                        <div class="nowPlaying">
+                            <div class="nowplaying-cover">
+                                <img src="./images/grand-scape.png" width="56" height="56"
+                                    alt="Portarda de Grand Escape (feat. Tokio Miura) de RADWIMPS, Toko Miura"
+                                    title="Portarda de Grand Escape (feat. Tokio Miura) de RADWIMPS, Toko Miura">
+                            </div>
+                            <div class="nowPlaying-details">
+                                <div class="nowPlaying-description">
+                                    <a href="#song" class="nowPlaying-title">Grand Escape (feat. Tokio Miura)</a>
+                                    <a href="#author" class="nowPlaying-artist">RADWIMPS, Toko Miura</a>
+                                </div>
+                                <div class="nowPlaying-actions">
+                                    <button class="player-control" role="switch" aria-checked="false"
+                                        aria-label="Guardar en tu biblioteca" title="Guardar en tu biblioteca">
+                                        <i class="icon-heart" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-playerControls">
+                        <div class="playerControls">
+                            <div class="playerControls-buttons" aria-label="Controles de reproducción">
+                                <button class="buttonIcon " aria-label="Anterior" title="Anterior">
+                                    <i class="icon-prev" aria-hidden="true"></i>
+                                </button>
+                                <button class="buttonIcon is-white" aria-label="Reproductor">
+                                    <i class="icon-play" aria-hidden="true"></i>
+                                </button>
+                                <button class="buttonIcon " aria-label="Siguiente" title="Siguiente">
+                                    <i class="icon-next" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div class="playerPlayback">
+                                <span class="playerPlayback-progressTime">01:40</span>
+                                <div class="playerPlayback-slider">
+                                    <div class="slider">
+                                        <div class="slider-progress">
+                                            <button class="slider-button"
+                                                aria-label="controlar el progreso de la reproducción"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="playerPlayback-progressTime">01:40</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-playerVolume">
+                        <div class="playerVolume">
+                            <button class="player-control" aria-label="Silenciar" aria-describedby="volumen-icon">
+                                <i class="icon-volumeUp" id="volumen-icon" role="presentation"
+                                    aria-label="Volumen alto"></i>
+                            </button>
+                            <div class="playerVolume-slider">
+                                <div class="slider">
+                                    <div class="slider-progress">
+                                        <button class="slider-button"
+                                            aria-label="controlar el progreso de la reproducción"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

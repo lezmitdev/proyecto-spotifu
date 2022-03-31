@@ -1,0 +1,47 @@
+.filtrarForm{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.filtrarForm input{
+    background: transparent;
+    border: none;
+    text-align: left;
+}
+.filtrarForm input[type="search"]{
+    color: var(--gray20);
+    font: var(--baseFont);
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+.filtrarForm .icon-close{
+    display: none;
+}
+.filtrarForm:focus-within{
+    max-inline-size: 31.25rem;
+    background: var(--gray20);
+    display: flex;
+    align-items: center;
+    padding-block-start: 0.5rem;
+    padding-block-end: 0.5rem;
+    padding-inline-start: 0.5rem;
+    padding-inline-end: 0.5rem;
+    color: white;
+    border-radius:0.25rem ;
+}
+.filtrarForm:focus-within .icon-close{
+    display: block;
+}
+.filtrarForm input:focus-within{
+    background: var(--gray20);
+    color: var(--white);
+    
+    flex: 1;
+}
+.filtrarForm input:focus-within,.filtrarForm input:focus-visible{
+    outline: none;
+}

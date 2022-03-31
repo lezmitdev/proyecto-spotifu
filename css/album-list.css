@@ -1,0 +1,55 @@
+@import './album-icons.css';
+@import './filtrar-form.css';
+
+.album{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+}
+.albumList-description{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.albumList-description h5{
+    font: var(--small);
+}
+
+.albumList-description a,.albumList-description p{
+    font: var(--baseFont);
+    color: var(--white);
+}
+.albumList-description a:hover{
+    text-decoration: none;
+}
+.albumList-content{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+.content-title,.content-date{
+    display: flex;
+    align-items: center;
+}
+.albumList-icons{
+    inline-size: 5.125rem;
+    display: flex;
+    gap: 1.25rem;
+}
+.albumList-title{
+    inline-size: 20.1875rem;
+}
+.albumList-artist{
+    inline-size: 17.125rem;
+}
+.albumList-album{
+    inline-size: 17.125rem;
+}
+.albumList-calendar{
+    inline-size: 5.75rem;
+}
+.albumList-clock{
+    inline-size: 3rem;
+}

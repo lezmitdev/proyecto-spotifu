@@ -1,0 +1,82 @@
+.album{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+}
+.albumList-detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.albumList.albumList-detail:first-of-type{
+    border-block-end: 1px solid;
+    block-size: 3rem;
+    margin-block-end: 1rem;
+}
+.albumList-detail h5,.albumList-detail , .albumList-detail p{
+    font: var(--baseFont);
+}
+.albumList-detail a:hover{
+    text-decoration: none;
+}
+
+.albumList-detailNumerador{
+    inline-size: 1.875rem;
+}
+.albumList-detailTitle{
+    inline-size: 14.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.albumList-detailAlbum{
+    inline-size: 21.375rem;
+}
+.albumList-detailFecha{
+    inline-size: 21.375rem;
+}
+.albumList-detailClock{
+    inline-size: 5rem;
+}
+
+.albumList-detailContent{
+    display: flex;
+}
+.detail-title p{
+    margin: 0;
+    font: var(--small);
+}
+.albumList-container {
+    counter-reset:index
+}
+p.contador{
+    counter-increment: index;
+}
+p.contador::before {
+    content:counter(index); 
+    color: var(--gray10);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

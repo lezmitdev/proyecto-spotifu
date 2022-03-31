@@ -2,6 +2,8 @@
 @import './fonts.css';
 @import './body.css';
 @import './link.css';
+@import './button.css';
+@import './user-sesion.css';
 @import './button-icon.css';
 @import './sidebar.css';
 @import './ellipsis.css';
@@ -9,7 +11,9 @@
 @import './player.css';
 @import './page.css';
 @import './layout.css';
-
+@import './playlist-album.css';
+@import './album-artist.css';
+@import './album-PlaylistList.css';
 
 
 :root {
